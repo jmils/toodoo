@@ -1,0 +1,11 @@
+<h1>Listing Tasks</h1>
+
+<ul id="tasks">
+  #Render is powerful and render the partial once for every object in that collection
+  <%= render @tasks %>
+  <%= render partial: 'task', object: @task %>
+</ul>
+
+<br>
+<%= render 'form' %>
+<%= link_to 'New Task', new_task_path %>
